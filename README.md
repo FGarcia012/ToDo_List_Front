@@ -1,12 +1,65 @@
-# React + Vite
+# ToDo List Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación para gestionar tareas con funcionalidades de creación, edición, eliminación, filtrado y búsqueda.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Lista de tareas con filtros y búsqueda en tiempo real
+- Creación y edición de tareas con validación
+- Prioridad, fecha límite y etiquetas
+- Diseño responsive y accesible
+- Animaciones suaves y estados de carga
+- Estadísticas y estados vacíos informativos
 
-## Expanding the ESLint configuration
+## Componentes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **TaskCard**: Muestra una tarea individual
+- **TaskForm**: Formulario para crear/editar tareas
+- **TaskList**: Contenedor principal de la lista y filtros
+
+## Inicialización local
+
+1. Clona el repositorio:
+   ```sh
+   git clone <URL_DEL_REPOSITORIO>
+   cd ToDo_List_Front
+   ```
+2. Instala dependencias:
+   ```sh
+   npm install
+   ```
+3. Inicia la aplicación:
+   ```sh
+   npm start
+   ```
+
+## Estructura de archivos
+
+```
+src/components/task/
+├── TaskCard.jsx
+├── TaskCard.css
+├── TaskForm.jsx
+├── TaskForm.css
+├── TaskList.jsx
+├── TaskList.css
+└── index.js
+```
+
+## Dependencias
+
+- React
+- PropTypes
+- CSS Modules
+
+## Consideraciones técnicas
+
+- Accesibilidad (atributos ARIA, navegación por teclado)
+- Performance (useMemo para filtros y orden)
+- Validación en tiempo real
+- Diseño adaptable a móvil y tablet
+
+---
+
+**Autor:**  
+Fredy Alexander García Sicajau
