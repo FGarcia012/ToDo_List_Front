@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: "http://localhost:3018/ToDoList/v1/",
+    baseURL: "https://to-do-list-back-xi.vercel.app/ToDoList/v1/",
     timeout: 3000,
     httpsAgent: false
 });
